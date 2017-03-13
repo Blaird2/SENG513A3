@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <title>Socket.IO chat</title>
+
+  <link rel="stylesheet" href="https:maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div id="LeftChat">
+    <ul id="messages">
+
+      <table id = "tableid">
+        <tr>
+          <th id="timecol"></th>
+          <th id="usernamecol"></th> 
+          <th id="messagecol"></th>
+        </tr>
+      </table>
+    </ul>
+
+  </div>
+  <div class = "col-md-4" id = "rightOnlineUsers">
+    <div class = "well">
+
+      <h2> Online Users</h2>
+
+
+      <ul class="list-group" id ="usersList"></ul>
+    </div>
+  </div>
+  
+  <form action="">
+    <input id="m" autocomplete="off" /><button>Send</button>
+  </form>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+
+</body>
+</html>
